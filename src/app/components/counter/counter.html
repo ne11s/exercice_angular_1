@@ -1,5 +1,5 @@
 <h2>Counter</h2>
-<p [class]="pair%2 == 0 ? `red`:`green`">{{pair}}</p>
+<p [class]="pair%2 ? `red`:`green`">{{pair}}</p>
 
 <button (click)="incremente()">+1</button>
 <button (click)="decremente()" >-1</button>
