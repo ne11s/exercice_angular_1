@@ -1,0 +1,13 @@
+
+<section>
+    <ul>
+        @for (serie of seri; track serie; let i = $index) {
+
+            <li>
+                <p>{{serie}}</p>
+                <button (click)="delet(serie)">supprimer</button>
+            </li>
+        }
+        
+    </ul>
+</section>
