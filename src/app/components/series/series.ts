@@ -9,6 +9,7 @@ import { log } from 'node:console';
 })
 export class Series {
   seri : string[] = ["Squide games","Breaking bad ", "Game of throne", "Rick & morty"]
+  //seri : string[] = []
   delet(i:string) {
     console.log(this.seri);
     
