@@ -1,0 +1,13 @@
+<ul>
+    @for (book of books; track book; let i = $index) {
+
+        <li>
+            <p>{{book.name}}</p>
+            <p>{{book.author}}</p>
+            <p>{{ book.isRead| changeEmote}}</p>
+            <button (click)="change(book)">Lu</button>
+        </li>
+    } @empty { 
+        <p>La liste est vide !</p>
+    } 
+</ul>
